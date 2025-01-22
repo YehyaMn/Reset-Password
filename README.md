@@ -11,16 +11,16 @@
 
 ## Step 2: Boot from USB and Access the Create Partition Wizard
 1. Insert the USB drive into the server and restart it.
-2. Enter the BIOS/UEFI setup (commonly by pressing `F2`, `F10`, or `DEL` during boot).
-3. Change the boot priority to boot from the USB drive first.
-4. Save changes and reboot the server.
+2. Enter the BIOS/UEFI on time boot (commonly by pressing `F11` for HP server during boot).
+3. Wait for the boot menu to open and select the USB drive boot
+4. Wait for ISO boot and the setup initialization.
 5. Once the setup begins, select your language and click "Next."
 6. Click "Install Now" to open the partition wizard.
 
 ## Step 3: Load the Correct RAID Driver
 1. In the partition wizard, if no drives are visible, click on "Load Driver."
 2. Insert the RAID driver disk or browse to the location of the RAID drivers.
-3. Load the appropriate driver for your RAID controller.
+3. Load the appropriate driver for your RAID controller, available on HP website.
 4. After the driver is loaded, the logical drive should appear.
 
 ## Step 4: Open the Repair Menu and Access Command Prompt
