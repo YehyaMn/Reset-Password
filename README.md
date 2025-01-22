@@ -58,7 +58,7 @@
 ## Step 8: Access Command Prompt via Ease of Access
 1. On the login screen, click the "Ease of Access" button in the bottom-right corner.
 2. A Command Prompt window will appear.
-   ![Windows-Live-Writer-Resetting-the-Domain-Administrator-passw_3166-image_4](https://github.com/user-attachments/assets/c45d31e1-6f33-4f1c-add7-8d75cf775aff)
+
 
 
 ## Step 9: Reset the Password
@@ -66,4 +66,4 @@
    `net user <username> <newpassword>`  
    Replace `<username>` with the account name and `<newpassword>` with the desired password.
 2. Close the Command Prompt and log in with the new password.
-
+   ![Windows-Live-Writer-Resetting-the-Domain-Administrator-passw_3166-image_4](https://github.com/user-attachments/assets/c45d31e1-6f33-4f1c-add7-8d75cf775aff)
