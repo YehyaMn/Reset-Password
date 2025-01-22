@@ -33,6 +33,7 @@
 1. Go back to the installation screen and click on "Repair your computer."
 2. Select "Troubleshoot" from the available options.
 3. Choose "Command Prompt."
+
 ![Repair](https://github.com/user-attachments/assets/53a74703-421b-4aa6-bab8-840a8daf0499)
 
 ## Step 5: Check Volume Using Diskpart
