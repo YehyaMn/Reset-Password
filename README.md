@@ -1,4 +1,4 @@
-![Diskpart](https://github.com/user-attachments/assets/c8a8d403-9e83-497c-a388-3ccea23df0a0)# Steps to Reset Password for Windows Server 2012
+# Steps to Reset Password for Windows Server 2012
 
 ## Step 1: Create a Bootable Image of Windows Server 2012 Using Rufus
 1. Download the ISO file for Windows Server 2012.
