@@ -1,4 +1,4 @@
-# Steps to Reset Password for Windows Server 2012
+![Diskpart](https://github.com/user-attachments/assets/c8a8d403-9e83-497c-a388-3ccea23df0a0)# Steps to Reset Password for Windows Server 2012
 
 ## Step 1: Create a Bootable Image of Windows Server 2012 Using Rufus
 1. Download the ISO file for Windows Server 2012.
@@ -8,6 +8,9 @@
 5. Click "SELECT" and browse to the ISO file for Windows Server 2012.
 6. Under "Partition Scheme," choose "MBR" (for BIOS) or "GPT" (for UEFI) based on your server setup.
 7. Click "START" and confirm the warning to create the bootable USB drive.
+![Rufus](https://github.com/user-attachments/assets/e8e5eb6b-7ebc-480b-abc6-2a08b8e3601c)
+
+
 
 ## Step 2: Boot from USB and Access the Create Partition Wizard
 1. Insert the USB drive into the server and restart it.
@@ -23,15 +26,21 @@
 3. Load the appropriate driver for your RAID controller, available on HP website.
 4. After the driver is loaded, the logical drive should appear.
 
+![Raid load](https://github.com/user-attachments/assets/ae929b92-877f-4c49-b277-c7313d0d32e6)
+
+
 ## Step 4: Open the Repair Menu and Access Command Prompt
 1. Go back to the installation screen and click on "Repair your computer."
 2. Select "Troubleshoot" from the available options.
 3. Choose "Command Prompt."
+![Repair](https://github.com/user-attachments/assets/53a74703-421b-4aa6-bab8-840a8daf0499)
 
 ## Step 5: Check Volume Using Diskpart
 1. In Command Prompt, type `diskpart` and press `Enter`.
 2. Type `list volume` to display all available volumes.
-3. Locate the volume containing the `Windows` folder (e.g., Volume C).
+3. Locate the volume containing the `Windows` folder (in my example Volume H).
+![Diskpart](https://github.com/user-attachments/assets/c9850d7e-2d64-4aaa-af50-5f124c78ed18)
+
 
 ## Step 6: Rename `utilman.exe` and `cmd.exe`
 1. Change to the Windows folder by typing:  
@@ -48,9 +57,12 @@
 ## Step 8: Access Command Prompt via Ease of Access
 1. On the login screen, click the "Ease of Access" button in the bottom-right corner.
 2. A Command Prompt window will appear.
+   ![Windows-Live-Writer-Resetting-the-Domain-Administrator-passw_3166-image_4](https://github.com/user-attachments/assets/c45d31e1-6f33-4f1c-add7-8d75cf775aff)
+
 
 ## Step 9: Reset the Password
 1. In the Command Prompt, use the `net user` command to reset the password:  
    `net user <username> <newpassword>`  
    Replace `<username>` with the account name and `<newpassword>` with the desired password.
 2. Close the Command Prompt and log in with the new password.
+
